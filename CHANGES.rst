@@ -1,4 +1,4 @@
-3.7 (unreleased)
+3.7 (2026-06-10)
 ----------------
 
 - Added a --temp-dir parameter to specify a non-default temporary directory.
