@@ -248,6 +248,22 @@ class UnoConverter:
                     f"There is no '{infiltername}' import filter. Available filters: {sorted(infilters.keys())}"
                 )
 
+        if outpath:
+            output_path = Path(outpath)
+            existed_before = output_path.exists()
+            try:
+                # Verify output path is writable before opening the input document.
+                with output_path.open("ab"):
+                    pass
+            except OSError as e:
+                raise RuntimeError(f"Path {outpath} is not writable: {e}") from e
+            finally:
+                if not existed_before:
+                    try:
+                        output_path.unlink()
+                    except OSError:
+                        pass
+
         with TempFileIfNeeded(inpath, data=indata, temp_dir=self.temp_dir) as input_path:
             # TODO: Verify that inpath exists and is openable, and that outdir exists, because uno's
             # exceptions are completely useless!

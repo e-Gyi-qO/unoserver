@@ -9,6 +9,8 @@
 
 - Fixed a bug in unoservers handling of the `-f` parameter.
 
+- Better error message if the outpath is not writeable (#154).
+
 
 3.6 (2025-11-24)
 ----------------
