@@ -362,12 +362,14 @@ def converter_main():
     group = parser.add_mutually_exclusive_group()
     group.add_argument(
         "--verbose",
+        "-V",
         action="store_true",
         dest="verbose",
         help="Increase informational output to logs.",
     )
     group.add_argument(
         "--quiet",
+        "-Q",
         action="store_true",
         dest="quiet",
         help="Decrease informational output to logs.",
@@ -505,12 +507,14 @@ def comparer_main():
     group = parser.add_mutually_exclusive_group()
     group.add_argument(
         "--verbose",
+        "-V",
         action="store_true",
         dest="verbose",
         help="Increase informational output to logs.",
     )
     group.add_argument(
         "--quiet",
+        "-Q",
         action="store_true",
         dest="quiet",
         help="Decrease informational output to logs.",
@@ -598,12 +602,14 @@ def ping_main():
     group = parser.add_mutually_exclusive_group()
     group.add_argument(
         "--verbose",
+        "-V",
         action="store_true",
         dest="verbose",
         help="Increase informational output to logs.",
     )
     group.add_argument(
         "--quiet",
+        "-Q",
         action="store_true",
         dest="quiet",
         help="Decrease informational output to logs.",
