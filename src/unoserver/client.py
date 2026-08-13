@@ -296,6 +296,7 @@ def converter_main():
         version=f"{parser.prog} {__version__}",
     )
     parser.add_argument(
+        "-c",
         "--convert-to",
         help="The file type/extension of the output file (ex pdf). Required when using stdout.",
     )
@@ -378,6 +379,7 @@ def converter_main():
         help="Write logs to a file (defaults to stderr).",
     )
     parser.add_argument(
+        "-p",
         "--password",
         help="The password to open the documents, if they are password protected.",
     )
