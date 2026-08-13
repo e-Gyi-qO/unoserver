@@ -127,7 +127,7 @@ Unoconvert
 
   unoconvert [-h] [-v] [-c/--convert-to CONVERT_TO] [--input-filter INPUT_FILTER] [--output-filter OUTPUT_FILTER]
              [--filter-option FILTER_OPTIONS] [--update-index] [--dont-update-index] [--host HOST] [--port PORT]
-             [--host-location {auto,remote,local}] [--protocol {http, https}] [-f/--logfile logfile] [-p/--password] [--verbose/-V] [--quiet/-Q]infile outfile
+             [--host-location {auto,remote,local}] [--protocol {http, https}] [-f/--logfile logfile] [-p/--password] [--verbose/-V] [--quiet/-Q] infile outfile
 
 * `infile`: The path to the file to be converted (use - for stdin).
 * `outfile`: The path to the converted file (use - for stdout).
